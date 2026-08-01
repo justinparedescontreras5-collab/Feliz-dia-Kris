@@ -1,299 +1,39 @@
-/*=========================================================
-        FUENTES
-=========================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/*=========================================================
-        CONFIGURACIÓN GENERAL
-=========================================================*/
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
 
-    width:100%;
-    height:100vh;
+    background:pink;
 
-    overflow:hidden;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-family:'Poppins',sans-serif;
-
-    background:linear-gradient(
-        180deg,
-        #ffd8eb 0%,
-        #ffc4df 30%,
-        #ffb4d7 65%,
-        #ffa7d0 100%
-    );
-
-}
-
-/*=========================================================
-        BOTÓN DE MÚSICA
-=========================================================*/
-
-#musicaBtn{
-
-    position:absolute;
-
-    top:30px;
-    left:30px;
-
-    border:none;
-
-    background:#ff4ca2;
-
-    color:white;
-
-    padding:15px 28px;
-
-    border-radius:40px;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    box-shadow:0px 8px 25px rgba(255,0,120,.35);
-
-}
-
-#musicaBtn:hover{
-
-    transform:scale(1.05);
-
-    background:#ff2d92;
-
-}
-
-/*=========================================================
-        CONTENEDOR
-=========================================================*/
-
-.contenedor{
-
-    width:90%;
-    max-width:1500px;
-
-    height:85vh;
-
-    background:rgba(255,255,255,.20);
-
-    backdrop-filter:blur(12px);
-
-    border-radius:35px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
+    font-family:Arial;
 
     text-align:center;
 
-    padding:50px;
-
-    box-shadow:0px 20px 45px rgba(0,0,0,.12);
+    margin-top:80px;
 
 }
 
-/*=========================================================
-        TITULO
-=========================================================*/
-
-.titulo{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:90px;
+h1{
 
     color:white;
 
-    text-shadow:
-
-        0px 0px 12px #ff65b1,
-        0px 0px 28px #ff65b1,
-        0px 0px 45px #ff65b1;
+    font-size:55px;
 
 }
 
-/*=========================================================
-        SUBTITULO
-=========================================================*/
-
-.subtitulo{
-
-    margin-top:10px;
-
-    font-size:34px;
-
-    color:white;
-
-    font-weight:600;
-
-}
-
-/*=========================================================
-        MENSAJE
-=========================================================*/
-
-.mensaje{
-
-    margin-top:35px;
-
-    width:70%;
-
-    color:white;
-
-    font-size:24px;
-
-    line-height:40px;
-
-}
-
-/*=========================================================
-        GIF
-=========================================================*/
-
-.gif{
-
-    margin-top:35px;
-
-}
-
-.gif img{
-
-    width:300px;
-
-}
-
-/*=========================================================
-        BOTÓN PRINCIPAL
-=========================================================*/
-
-.boton{
-
-    margin-top:40px;
-
-    border:none;
-
-    cursor:pointer;
-
-    padding:18px 50px;
-
-    border-radius:50px;
-
-    background:#ff4ca2;
-
-    color:white;
-
-    font-size:26px;
-
-    font-weight:bold;
-
-    transition:.30s;
-
-}
-
-.boton:hover{
-
-    transform:scale(1.08);
-
-    background:#ff2d92;
-
-}
-
-/*=========================================================
-        CARTA
-=========================================================*/
-
-#carta{
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.45);
-
-    display:none;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.contenidoCarta{
-
-    width:650px;
-
-    max-width:90%;
-
-    background:white;
-
-    border-radius:25px;
-
-    padding:40px;
-
-    text-align:center;
-
-}
-
-.contenidoCarta h2{
-
-    color:#ff3c9a;
-
-    margin-bottom:20px;
-
-}
-
-.contenidoCarta p{
-
-    font-size:22px;
-
-    line-height:36px;
-
-}
-
-#cerrarCarta{
+button{
 
     margin-top:30px;
 
+    padding:18px 35px;
+
+    font-size:22px;
+
     border:none;
 
-    background:#ff4ca2;
-
-    color:white;
-
-    padding:15px 35px;
-
-    border-radius:40px;
+    border-radius:30px;
 
     cursor:pointer;
 
-}
+    background:#ff4fa3;
 
-/*=========================================================
-        CONTENEDOR DE CORAZONES
-=========================================================*/
-
-#corazones{
-
-    position:fixed;
-
-    inset:0;
-
-    pointer-events:none;
+    color:white;
 
 }
