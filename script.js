@@ -1,62 +1,23 @@
-//======================================
-//      REPRODUCIR MÚSICA
-//======================================
-
 const musica = document.getElementById("musica");
 
-const botonMusica = document.getElementById("musicaBtn");
+const boton = document.getElementById("musicaBtn");
 
-let reproduciendo = false;
+boton.addEventListener("click", async () => {
 
-botonMusica.addEventListener("click",()=>{
+    try{
 
-    if(!reproduciendo){
+        await musica.play();
 
-        musica.play()
-.then(() => {
-    console.log("La música empezó.");
-})
-.catch((error) => {
-    console.error("Error:", error);
-    alert(error.message);
-});
-
-        botonMusica.innerHTML="⏸️ Pausar música";
-
-        reproduciendo=true;
+        alert("La música empezó correctamente.");
 
     }
 
-    else{
+    catch(error){
 
-        musica.pause();
+        alert("Error: " + error.message);
 
-        botonMusica.innerHTML="🎵 Reproducir música";
-
-        reproduciendo=false;
+        console.log(error);
 
     }
-
-});
-
-//======================================
-//          CARTA
-//======================================
-
-const carta=document.getElementById("carta");
-
-const abrir=document.querySelector(".boton");
-
-const cerrar=document.getElementById("cerrarCarta");
-
-abrir.addEventListener("click",()=>{
-
-    carta.style.display="flex";
-
-});
-
-cerrar.addEventListener("click",()=>{
-
-    carta.style.display="none";
 
 });
