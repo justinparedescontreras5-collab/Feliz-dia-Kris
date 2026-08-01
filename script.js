@@ -12,7 +12,14 @@ botonMusica.addEventListener("click",()=>{
 
     if(!reproduciendo){
 
-        musica.play();
+        musica.play()
+.then(() => {
+    console.log("La música empezó.");
+})
+.catch((error) => {
+    console.error("Error:", error);
+    alert(error.message);
+});
 
         botonMusica.innerHTML="⏸️ Pausar música";
 
