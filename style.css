@@ -1,1 +1,172 @@
+/* ==========================================
+   IMPORTAR FUENTES
+========================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        180deg,
+        #ffd9ec,
+        #ffc3df,
+        #ffafd5,
+        #ff9fcc
+    );
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+========================================== */
+
+.contenedor{
+
+    width:92%;
+    max-width:1600px;
+
+    height:88vh;
+
+    background:rgba(255,255,255,.18);
+
+    border-radius:35px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/* ==========================================
+   TITULO
+========================================== */
+
+.titulo{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:92px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px #ff73ba,
+    0 0 20px #ff73ba,
+    0 0 35px #ff73ba;
+
+}
+
+/* ==========================================
+   SUBTITULO
+========================================== */
+
+.subtitulo{
+
+    margin-top:10px;
+
+    font-size:34px;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   MENSAJE
+========================================== */
+
+.mensaje{
+
+    margin-top:25px;
+
+    width:75%;
+
+    color:white;
+
+    font-size:24px;
+
+    line-height:40px;
+
+}
+
+/* ==========================================
+   GIF
+========================================== */
+
+.gif img{
+
+    width:320px;
+
+    margin-top:35px;
+
+}
+
+/* ==========================================
+   BOTÓN
+========================================== */
+
+.boton{
+
+    margin-top:35px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    background:#ff4da6;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    transition:.30s;
+
+}
+
+.boton:hover{
+
+    transform:scale(1.08);
+
+    background:#ff2d95;
+
+}
